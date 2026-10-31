@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#183b4e">
 <title>ヒロコとナオコの香港・マカオ弾丸旅行</title>
+
 <style>
 :root{--navy:#183b4e;--teal:#2f6870;--gold:#b78b4b;--cream:#fbf7ef;--rose:#f2e4df;--ink:#24323a;--muted:#5b6b70;--white:#fff;--line:#e5d8c5}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.8}a{color:#155a70;text-decoration-thickness:1px;text-underline-offset:3px}a:focus,button:focus{outline:3px solid #d6a64f;outline-offset:3px}.hero{background:linear-gradient(145deg,#183b4e 0%,#2e6970 70%,#8a9b88 100%);color:#fff;padding:42px 22px 34px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #ffffff55;border-radius:50%;right:-95px;top:-80px;box-shadow:0 0 0 22px #ffffff0d,0 0 0 48px #ffffff0a}.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#f4d8a1}.hero h1{font-size:clamp(29px,8vw,42px);line-height:1.3;margin:12px 0 14px;max-width:520px}.hero p{margin:0;max-width:520px;color:#f4f6f2}.hero .dates{margin-top:22px;display:inline-block;border:1px solid #ffffff75;border-radius:999px;padding:7px 14px;font-size:15px}.wrap{max-width:760px;margin:0 auto;padding:0 16px 40px}.quicknav{position:sticky;top:0;z-index:5;background:#fbf7eff2;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:9px 10px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap}.quicknav a{flex:0 0 auto;text-decoration:none;color:var(--navy);font-size:14px;font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 13px}.section{padding-top:24px}.dayhead{display:flex;align-items:center;gap:14px;margin:0 0 16px}.daynum{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;background:var(--navy);color:#fff;border-radius:16px;font-size:15px;font-weight:800;line-height:1.2;text-align:center}.dayhead h2{font-size:25px;line-height:1.35;margin:0;color:var(--navy)}.dayhead p{margin:3px 0 0;color:var(--muted);font-size:14px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin:13px 0;box-shadow:0 5px 18px #183b4e08}.card h3{margin:0 0 9px;font-size:20px;color:var(--navy);line-height:1.45}.card p{margin:8px 0}.pill{display:inline-block;background:#eaf2ef;color:#245a58;border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700;margin:0 5px 5px 0}.time{font-weight:800;color:#8b642d;font-variant-numeric:tabular-nums}.notice{background:#fff4dc;border-left:5px solid var(--gold);padding:13px 15px;border-radius:8px;margin:14px 0}.alert{background:#f8e9e5;border-left:5px solid #b86d5b;padding:13px 15px;border-radius:8px;margin:14px 0}.photo{margin:15px 0 6px;border-radius:13px;overflow:hidden;background:#e7e1d5}.photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;color:#4d5d5c;font-size:15px;text-align:center}.photo figcaption{font-size:13px;color:var(--muted);padding:4px 2px}.timeline{list-style:none;padding:0;margin:10px 0}.timeline li{position:relative;padding:0 0 16px 24px;border-left:2px solid #d9c9ac;margin-left:7px}.timeline li:last-child{border-left-color:transparent;padding-bottom:0}.timeline li:before{content:"";position:absolute;width:10px;height:10px;left:-6px;top:9px;background:var(--gold);border-radius:50%}.timeline strong{color:var(--navy)}ul.checklist{list-style:none;padding:0;margin:8px 0}ul.checklist li{padding:10px 0;border-bottom:1px solid #eee6da;display:flex;gap:12px;align-items:flex-start}ul.checklist input{width:22px;height:22px;flex:0 0 22px;margin-top:4px;accent-color:var(--teal)}.phrase{display:grid;grid-template-columns:1fr 1fr;gap:10px}.phrase div{background:#f7f2e8;border-radius:12px;padding:12px}.phrase b{display:block;color:var(--navy);font-size:18px}.phrase small{display:block;color:var(--muted);font-size:14px}.links{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.links a{display:inline-block;border:1px solid #b8c9c5;border-radius:999px;padding:8px 12px;text-decoration:none;font-size:15px;background:#f7fbf9}.footer{margin-top:28px;background:var(--navy);color:#fff;border-radius:20px;padding:22px}.footer h2{margin:0 0 10px;font-size:24px}.footer p{margin:8px 0;color:#eef3f0}.small{font-size:14px;color:var(--muted)}.backtop{display:block;text-align:center;padding:20px;color:var(--navy)}
@@ -32,23 +33,112 @@
 .attraction-list li{display:flow-root;padding:12px 0;border-bottom:1px solid var(--line)}
 .attraction-list li:last-child{border-bottom:0}
 .attraction-text b{display:block;color:var(--navy);margin-bottom:4px}
-/* Page1より10%大きい画像領域：PC 209×165px */
+
+/* マカオ観光スポット：本文1行目に合わせた横長画像 */
 .attraction-image{
   float:right;
   display:block;
-  width:209px;
-  height:165px;
+  width:230px;
+  aspect-ratio:16/9;
+  height:auto;
   object-fit:cover;
   border-radius:8px;
   background:#eee8dc;
-  margin:0 0 0 14px;
+  /* 見出し（スポット名）の下、本文の開始位置に画像上端を合わせる */
+  margin:40px 0 0 14px;
 }
-/* スマートフォン：Page1より10%大きい132×123px */
+/* スマートフォンでも横長比率を維持 */
 @media(max-width:600px){
-  .attraction-image{width:132px;height:123px;margin-left:10px}
+  .attraction-image{
+    width:132px;
+    aspect-ratio:16/9;
+    height:auto;
+    margin:40px 0 0 10px;
+  }
 }
 @media(min-width:650px){.hero{padding:60px 32px}.wrap{padding-left:24px;padding-right:24px}.card{padding:22px}.section{padding-top:34px}}
+
+/* Gazou101～107：タップ／クリックで画像を拡大表示 */
+.attraction-image,
+.extra-wrap-image{
+  cursor:zoom-in;
+  -webkit-tap-highlight-color:transparent;
+}
+.image-viewer{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:
+    max(16px, env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right))
+    max(16px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
+  background:rgba(8,18,24,.94);
+  overscroll-behavior:contain;
+  touch-action:pan-x pan-y;
+}
+.image-viewer.is-open{display:flex}
+.image-viewer__image{
+  display:block;
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  border-radius:6px;
+  box-shadow:0 8px 32px rgba(0,0,0,.35);
+  cursor:zoom-out;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+.image-viewer__close{
+  position:absolute;
+  top:max(10px, env(safe-area-inset-top));
+  right:max(10px, env(safe-area-inset-right));
+  width:52px;
+  height:52px;
+  min-width:52px;
+  min-height:52px;
+  display:grid;
+  place-items:center;
+  padding:0;
+  border:2px solid rgba(255,255,255,.85);
+  border-radius:50%;
+  background:rgba(20,35,43,.88);
+  color:#fff;
+  font:700 34px/1 sans-serif;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  z-index:2;
+}
+.image-viewer__close:focus-visible{
+  outline:3px solid #f4d8a1;
+  outline-offset:4px;
+}
+@media(max-width:600px){
+  .image-viewer{
+    padding:
+      max(76px, calc(env(safe-area-inset-top) + 68px))
+      max(12px, env(safe-area-inset-right))
+      max(24px, env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+  }
+  .image-viewer__image{max-width:100%;max-height:100%;border-radius:4px}
+}
+@media(orientation:landscape) and (max-height:500px){
+  .image-viewer{padding:8px 76px 8px 8px}
+  .image-viewer__close{
+    top:max(8px, env(safe-area-inset-top));
+    right:max(8px, env(safe-area-inset-right));
+  }
+}
+
 </style>
+
 </head>
 <body>
 <header class="hero" id="top">
@@ -59,8 +149,7 @@
   <figure class="photo"><img src="Gazou1.jpg" alt="ごちゃごちゃ都市香港"><figcaption>香港の楽しみ：グルメ・夜景・ショッピング</figcaption></figure>
 </header>
 <nav class="quicknav" aria-label="ページ内ナビゲーション">
-<a href="#prep">出発前</a><a href="#day1">11/9到着</a><a href="#day2">11/10マカオ</a><a href="#day3">11/11</a><a href="#day4">11/12香港島と荔枝角</a><a href="#day5">11/13帰国</a><a href="#guide">便利帳</a><a href="#check">チェックリスト</a>
-<p><small>横スクロールできます</small></p>
+<a href="#prep">出発前</a><a href="#day1">9日</a><a href="#day2">10日</a><a href="#day3">11日</a><a href="#day4">12日</a><a href="#day5">13日</a><a href="#guide">便利帳</a><a href="#check">チェックリスト</a>
 </nav>
 <main class="wrap">
 <section class="section" id="prep">
@@ -88,15 +177,15 @@
 <h3>✈️ 福岡から香港空港へ</h3>
 <ul class="timeline">
 <li><strong>福岡空港で</strong><br>早めに着いておきましょう。<br>オンラインチェックインが終わっていれば、空港ではオンラインチェックインの看板があるところに並べます。<br>搭乗券を受け取ったらしばらく時間があると思います。<br>
-  ・1階でWiWi-Fiを受け取ろう。Wi-Fiは預けられないので手荷物の中に入れましょう。<br>・搭乗前に軽食を。<br>時間が心配なら、先に出国手続きをしても免税店のところにフードコートがありますよ。</li>
+  ・1階でWi-Fiを受け取ろう。<br>Wi-Fiは預けられないので手荷物の中に入れましょう。<br>・搭乗前に軽食を。<br>時間が心配なら、先に出国手続きをしても免税店のところにフードコートがありますよ。</li>
 <li><strong>UO601便</strong><br>福岡発 <span class="time">12:50</span> → 香港着 <span class="time">15:50（現地時間）</span><br>３時間に見えますが時差があるので実際は４時間くらいです。</li>
-<li><strong>香港空港到着</strong><br>地下鉄のような電車に乗って入国審査会場まで行きます。人の流れについて行って大丈夫。<br>入国審査・手荷物受取後「Ｂ出口」でカズミがお迎えします。３人でホテルへ向かいましょう。</li>
+<li><strong>香港空港到着</strong><br>地下鉄のような電車に乗って入国審査会場まで行きます。人の流れについて行って大丈夫。<br>入国審査・手荷物受取後<b>「Ｂ出口」</b>でカズミがお迎えします。３人でホテルへ向かいましょう。</li>
 </ul>
 <div class="notice">LCCのため機内サービスは限られます。飲食物の持ち込み・機内での飲食は原則禁止です（搭乗前に給水するか売店で買ったお水の１口くらいなら大目に見てもらえるでしょう）。</div>
 </d乗って
 <div class="card">
 <h3>🚇 空港からホテルへ</h3>
-<p><b>カズミからOctopus（八達通）カード</b>を受け取ります。香港の交通機関や買い物に使える、Suica・SUGOCAのようなカードです。</p>
+<p><b>カズミからOctopus（八達通）カード</b>を受け取ります。香港の交通機関や買い物に使える、Suica・SUGOCAのようなカードです。<br>あとはカズミ任せで大丈夫！</p>
 <div class="links"><a href="https://www.octopus.com.hk/" target="_blank" rel="noopener">Octopus公式サイト ↗</a><a href="https://www.google.com/search?q=Hong+Kong+Airport+Octopus+Card" target="_blank" rel="noopener">空港での受け取り情報を検索 ↗</a></div>
 </div>
 <div class="card">
@@ -106,7 +195,7 @@
 </div>
 <div class="card">
 <h3>🌆 夕方は尖沙咀（チムサーチョイ）へ</h3>
-<p>ホテルでひと息ついたら、無理のない範囲で尖沙咀を散策。</p>
+<p>ホテルでひと息ついたら、無理のない範囲で尖沙咀を散策してみましょうか</p>
 <p>地下鉄の上を南北に走るネイザンロード（彌敦道）は、香港らしい活気とネオンが楽しめる九龍の大通り。高層ビルや老舗店が並び、金色に輝く看板を眺めながら歩けば、まるで映画の世界。ショッピングやグルメ、二階建てバスからの街並み観察も楽しみの一つです。</p>
 <figure class="photo"><img src="Gazou3.jpg" alt="尖沙咀の風景"><figcaption>夜の尖沙咀</figcaption></figure>
 <p><span class="time">19:00 予約済み</span><br><b>ウーコン（滬江大飯店）</b>で夕食。尖沙咀にあります。</p>
@@ -129,16 +218,19 @@
 <ul class="timeline">
 <li>ホテルで朝食（朝食予約なし。各自で手配）。</li>
 <li>キー グリーンホテル モンコックをチェックアウト。</li>
-<li>マカオで使わない荷物は香港のホテルに預ける予定。</li>
+<li>マカオで使わない荷物は香港のホテルに預ける予定。<br>パスポートを忘れずに！</li>
 <li>マカオの<strong>ザ・ヴェネツィアン・マカオ</strong>へ移動。</li>
 </ul>
+<p>マカオにはターボジェット（船）で行きますよ。<br>まずはMTRで上環へ、上環駅から直結ビルの3階へ上がり、エスカレーターで左手にある赤いターボジェットの入口から入場します。
+<br>乗船時間は１時間くらいです。<br>マカオ港からは、ゴージャスなヴェネツィアン専用バスに乗ります。</p>
 <div class="links"><a href="https://www.venetianmacao.com/" target="_blank" rel="noopener">ヴェネツィアン・マカオ公式サイト ↗</a><a href="https://www.google.com/maps/search/?api=1&query=The+Venetian+Macao" target="_blank" rel="noopener">ホテルの地図 ↗</a></div>
 </div>
 <div class="card">
 <h3>昼ごろ〜夜｜ホテルの中でゆったり</h3>
-<figure class="photo"><img src="main_logo_venetian.jpg" alt="ベネチアン"　 width="400" height="80"></figcaption></figure>
-<p></p>
-<figure class="photo"><img src="Gazou5.jpg" alt="女人街の風景"><figcaption>ベネチアンホテル内：もう一つの町です。</figcaption></figure>
+<p>着きました！　豪華さと大きさと人の多さにびっくり</p>
+<figure class="photo"><img src="main_logo_venetian.png" alt="ベネチアン"　 width="400" height="80"></figcaption></figure>
+
+<figure class="photo"><img src="Gazou5.jpg" alt="女人街の風景"><figcaption>ベネチアンホテル内：もう、一つの町と言って良いです。</figcaption></figure>
 <p>ショッピング、館内散策、写真撮影、カフェや食事など、ホテル内で過ごす時間を主役に。疲れたらお部屋で休憩しましょう。</p>
 <ul>
 <li>館内の運河・ゴンドラエリアを散策</li>
@@ -201,7 +293,7 @@
 <div class="links"><a href="https://www.google.com/maps/search/?api=1&query=Senado+Square+Macau" target="_blank" rel="noopener">セナド広場 ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Ruins+of+St.+Paul%27s+Macau" target="_blank" rel="noopener">聖ポール天主堂跡 ↗</a><a href="https://www.google.com/search?q=Macau+tourist+attractions+official" target="_blank" rel="noopener">マカオ観光情報 ↗</a></div>
 </div>
 <div class="card">
-<h3>マカオでランチして１４時前にはフェリー乗り場に移動しておきます。</h3>
+<h4>ポルトガル料理のランチして１４時前にはフェリー乗り場に移動しておきます。</h4>
 
 <ul class="timeline">
 <p>香港に戻ってきました。</p>
@@ -223,7 +315,8 @@
 <p>朝食後、香港島サイドを中心に観光。</p>
 <p><b>レパルスベイ</b><br>
 <img class="extra-wrap-image" src="Gazou106.jpg" alt="レパルスベイの海岸風景">
-香港島南部にある香港で最も有名かつ美しい三日月型のビーチリゾートです。背後に山を背負い、目の前に穏やかな海が広がる「龍脈」の通り道であり、香港屈指の強力な風水パワースポットとしても知られています。</p>
+香港島南部にある香港で最も有名かつ美しい三日月型のビーチリゾートです。背後に山を背負い、目の前に穏やかな海が広がる「龍脈」の通り道であり、香港屈指の強力な風水パワースポットとしても知られています。
+<br><br>そして何といっても名作映画「慕情」で主人公の女医ハン・スーイン（ジェニファー・ジョーンズ）とアメリカ人新聞記者のマーク・エリオット（ウィリアム・ホールデン）が2本の煙草に同時に火をつける、非常にロマンチックなラブシーンがあったのもここです。<br>事前に映画鑑賞して予習しておきましょう。</p>
 <p><b>スタンレーマーケット</b><br>
 • 迷路のような路地にお宝がぎっしり<br>
 <img class="extra-wrap-image" src="Gazou107.jpg" alt="スタンレーマーケットの路地と店舗">
@@ -235,8 +328,8 @@
 <div class="links"><a href="https://www.google.com/maps/search/?api=1&query=Repulse+Bay+Hong+Kong" target="_blank" rel="noopener">レパルスベイの地図 ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Stanley+Market+Hong+Kong" target="_blank" rel="noopener">スタンレーマーケットの地図 ↗</a><a href="https://www.google.com/search?q=Repulse+Bay+Stanley+Market+Hong+Kong" target="_blank" rel="noopener">観光情報を検索 ↗</a></div>
 </div>
 <div class="card">
-<ｐ>午後｜上環（シャンワン）から高速ターボジェット（船）に乗って、九龍（九龍サイド）に戻ります。</p>
-<br><h3></h3>ライチッコク（荔枝角）でお買い物</h3>
+
+<br><h3>ライチッコク（荔枝角）でお買い物</h3>
 <p>何百もの店舗がひしめき合う、衣料品やファッション雑貨の巨大な卸売・輸出街です。最新トレンドの服が格安で手に入るため、プロのバイヤーだけでなく一般の買い物客（特に週末）にも人気があります。</p>
 <figure class="photo"><img src="Gazou11.jpg" alt="香港の海岸と街のイメージ"><figcaption>香港の海辺</figcaption></figure>
 
@@ -329,5 +422,193 @@
 </footer>
 <a class="backtop" href="#top">↑ 表紙へ戻る</a>
 </main>
+
+<script>
+(() => {
+  "use strict";
+
+  const targetNames = new Set([
+    "Gazou101.jpg", "Gazou102.jpg", "Gazou103.jpg",
+    "Gazou104.jpg", "Gazou105.jpg", "Gazou106.jpg",
+    "Gazou107.jpg"
+  ]);
+
+  // 画像ビューアをページ内に一度だけ作成
+  const viewer = document.createElement("div");
+  viewer.className = "image-viewer";
+  viewer.id = "imageViewer";
+  viewer.setAttribute("role", "dialog");
+  viewer.setAttribute("aria-modal", "true");
+  viewer.setAttribute("aria-label", "拡大画像");
+  viewer.setAttribute("aria-hidden", "true");
+
+  const closeButton = document.createElement("button");
+  closeButton.className = "image-viewer__close";
+  closeButton.type = "button";
+  closeButton.setAttribute("aria-label", "画像を閉じる");
+  closeButton.title = "閉じる";
+  closeButton.textContent = "×";
+
+  const largeImage = document.createElement("img");
+  largeImage.className = "image-viewer__image";
+  largeImage.alt = "";
+  largeImage.draggable = false;
+
+  viewer.append(closeButton, largeImage);
+  document.body.appendChild(viewer);
+
+  let isOpen = false;
+  let previousScrollY = 0;
+  let previousOverflow = "";
+  let previousBodyPosition = "";
+  let previousBodyTop = "";
+  let previousBodyWidth = "";
+  let opener = null;
+  let viewerHistoryActive = false;
+
+  function fileNameFromImage(img) {
+    try {
+      return decodeURIComponent(new URL(img.currentSrc || img.src, location.href)
+        .pathname.split("/").pop());
+    } catch (_) {
+      return (img.getAttribute("src") || "").split("/").pop();
+    }
+  }
+
+  function openViewer(img) {
+    if (isOpen) return;
+
+    const fileName = fileNameFromImage(img);
+    if (!targetNames.has(fileName)) return;
+
+    isOpen = true;
+    opener = img;
+    previousScrollY = window.scrollY;
+
+    largeImage.src = img.currentSrc || img.src;
+    largeImage.alt = img.alt || "拡大画像";
+
+    // 背景ページのスクロールを固定し、閉じたときの位置を保持
+    previousOverflow = document.documentElement.style.overflow;
+    previousBodyPosition = document.body.style.position;
+    previousBodyTop = document.body.style.top;
+    previousBodyWidth = document.body.style.width;
+
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${previousScrollY}px`;
+    document.body.style.width = "100%";
+
+    viewer.classList.add("is-open");
+    viewer.setAttribute("aria-hidden", "false");
+
+    // スマホのブラウザ戻る操作でビューアだけを閉じられるようにする
+    try {
+      history.pushState(
+        Object.assign({}, history.state || {}, { imageViewerOpen: true }),
+        "",
+        "#image-viewer"
+      );
+      viewerHistoryActive = true;
+    } catch (_) {
+      viewerHistoryActive = false;
+    }
+
+    closeButton.focus({ preventScroll: true });
+  }
+
+  function hideViewer(restoreFocus = true) {
+    if (!isOpen) return;
+
+    isOpen = false;
+    viewer.classList.remove("is-open");
+    viewer.setAttribute("aria-hidden", "true");
+    largeImage.removeAttribute("src");
+
+    document.documentElement.style.overflow = previousOverflow;
+    document.body.style.position = previousBodyPosition;
+    document.body.style.top = previousBodyTop;
+    document.body.style.width = previousBodyWidth;
+
+    window.scrollTo(0, previousScrollY);
+
+    if (restoreFocus && opener && typeof opener.focus === "function") {
+      opener.focus({ preventScroll: true });
+    }
+    opener = null;
+  }
+
+  function closeViewer() {
+    if (!isOpen) return;
+    const shouldGoBack = viewerHistoryActive &&
+      history.state && history.state.imageViewerOpen;
+
+    // 先に閉じて操作への反応を即時にする
+    hideViewer(true);
+
+    if (shouldGoBack) {
+      viewerHistoryActive = false;
+      history.back();
+    }
+  }
+
+  document.addEventListener("click", (event) => {
+    const img = event.target.closest("img");
+    if (!img) return;
+    const fileName = fileNameFromImage(img);
+    if (targetNames.has(fileName)) {
+      event.preventDefault();
+      openViewer(img);
+    }
+  });
+
+  closeButton.addEventListener("click", closeViewer);
+
+  // 画像そのものをタップしても閉じられる
+  largeImage.addEventListener("click", closeViewer);
+
+  // 画像の外側をタップして閉じる
+  viewer.addEventListener("click", (event) => {
+    if (event.target === viewer) closeViewer();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!isOpen) return;
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeViewer();
+    }
+    if (event.key === "Tab") {
+      event.preventDefault();
+      closeButton.focus();
+    }
+  });
+
+  // Android／iPhoneの戻る操作で拡大画面を閉じる
+  window.addEventListener("popstate", () => {
+    if (isOpen) {
+      viewerHistoryActive = false;
+      hideViewer(true);
+    } else {
+      viewerHistoryActive = false;
+    }
+  });
+
+  // 画面回転・表示領域変化時に画像の最大表示寸法を再計算
+  window.addEventListener("resize", () => {
+    if (!isOpen) return;
+    largeImage.style.maxWidth = "100%";
+    largeImage.style.maxHeight = "100%";
+  });
+  window.addEventListener("orientationchange", () => {
+    if (!isOpen) return;
+    requestAnimationFrame(() => {
+      largeImage.style.maxWidth = "100%";
+      largeImage.style.maxHeight = "100%";
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
