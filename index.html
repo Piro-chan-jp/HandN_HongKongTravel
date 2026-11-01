@@ -10,24 +10,18 @@
 :root{--navy:#183b4e;--teal:#2f6870;--gold:#b78b4b;--cream:#fbf7ef;--rose:#f2e4df;--ink:#24323a;--muted:#5b6b70;--white:#fff;--line:#e5d8c5}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.8}a{color:#155a70;text-decoration-thickness:1px;text-underline-offset:3px}a:focus,button:focus{outline:3px solid #d6a64f;outline-offset:3px}.hero{background:linear-gradient(145deg,#183b4e 0%,#2e6970 70%,#8a9b88 100%);color:#fff;padding:42px 22px 34px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #ffffff55;border-radius:50%;right:-95px;top:-80px;box-shadow:0 0 0 22px #ffffff0d,0 0 0 48px #ffffff0a}.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#f4d8a1}.hero h1{font-size:clamp(29px,8vw,42px);line-height:1.3;margin:12px 0 14px;max-width:520px}.hero p{margin:0;max-width:520px;color:#f4f6f2}.hero .dates{margin-top:22px;display:inline-block;border:1px solid #ffffff75;border-radius:999px;padding:7px 14px;font-size:15px}.wrap{max-width:760px;margin:0 auto;padding:0 16px 40px}.quicknav{position:sticky;top:0;z-index:5;background:#fbf7eff2;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:9px 10px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap}.quicknav a{flex:0 0 auto;text-decoration:none;color:var(--navy);font-size:14px;font-weight:700;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 13px}.section{padding-top:24px}.dayhead{display:flex;align-items:center;gap:14px;margin:0 0 16px}.daynum{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;background:var(--navy);color:#fff;border-radius:16px;font-size:15px;font-weight:800;line-height:1.2;text-align:center}.dayhead h2{font-size:25px;line-height:1.35;margin:0;color:var(--navy)}.dayhead p{margin:3px 0 0;color:var(--muted);font-size:14px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin:13px 0;box-shadow:0 5px 18px #183b4e08}.card h3{margin:0 0 9px;font-size:20px;color:var(--navy);line-height:1.45}.card p{margin:8px 0}.pill{display:inline-block;background:#eaf2ef;color:#245a58;border-radius:999px;padding:3px 10px;font-size:13px;font-weight:700;margin:0 5px 5px 0}.time{font-weight:800;color:#8b642d;font-variant-numeric:tabular-nums}.notice{background:#fff4dc;border-left:5px solid var(--gold);padding:13px 15px;border-radius:8px;margin:14px 0}.alert{background:#f8e9e5;border-left:5px solid #b86d5b;padding:13px 15px;border-radius:8px;margin:14px 0}.photo{margin:15px 0 6px;border-radius:13px;overflow:hidden;background:#e7e1d5}.photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;color:#4d5d5c;font-size:15px;text-align:center}.photo figcaption{font-size:13px;color:var(--muted);padding:4px 2px}.timeline{list-style:none;padding:0;margin:10px 0}.timeline li{position:relative;padding:0 0 16px 24px;border-left:2px solid #d9c9ac;margin-left:7px}.timeline li:last-child{border-left-color:transparent;padding-bottom:0}.timeline li:before{content:"";position:absolute;width:10px;height:10px;left:-6px;top:9px;background:var(--gold);border-radius:50%}.timeline strong{color:var(--navy)}ul.checklist{list-style:none;padding:0;margin:8px 0}ul.checklist li{padding:10px 0;border-bottom:1px solid #eee6da;display:flex;gap:12px;align-items:flex-start}ul.checklist input{width:22px;height:22px;flex:0 0 22px;margin-top:4px;accent-color:var(--teal)}.phrase{display:grid;grid-template-columns:1fr 1fr;gap:10px}.phrase div{background:#f7f2e8;border-radius:12px;padding:12px}.phrase b{display:block;color:var(--navy);font-size:18px}.phrase small{display:block;color:var(--muted);font-size:14px}.links{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.links a{display:inline-block;border:1px solid #b8c9c5;border-radius:999px;padding:8px 12px;text-decoration:none;font-size:15px;background:#f7fbf9}.footer{margin-top:28px;background:var(--navy);color:#fff;border-radius:20px;padding:22px}.footer h2{margin:0 0 10px;font-size:24px}.footer p{margin:8px 0;color:#eef3f0}.small{font-size:14px;color:var(--muted)}.backtop{display:block;text-align:center;padding:20px;color:var(--navy)}
 
-/* レパルスベイ・スタンレーマーケット：右側画像と文章の回り込み */
+/* レパルスベイ・スタンレーマーケット：画像表示領域を300×240pxに統一 */
 .extra-wrap-image{
   float:right;
   display:block;
-  width:230px;
-  height:182px;
+  width:300px;
+  height:240px;
   object-fit:cover;
   border-radius:8px;
   background:#eee8dc;
   margin:0 0 0 14px;
 }
-@media(max-width:600px){
-  .extra-wrap-image{
-    width:145px;
-    height:135px;
-    margin-left:10px;
-  }
-}
+/* スマートフォンでも300×240pxを維持 */
 /* マカオ観光スポット：画像の横から下へ文章が回り込むレイアウト */
 .attraction-list{list-style:none;padding:0;margin:10px 0 16px}
 .attraction-list li{display:flow-root;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -138,7 +132,7 @@
 <h3>✈️ 福岡から香港空港へ</h3>
 <ul class="timeline">
 <li><strong>福岡空港で</strong><br>早めに着いておきましょう。<br>オンラインチェックインが終わっていれば、空港ではオンラインチェックインの看板があるところに並べます。<br>搭乗券を受け取ったらしばらく時間があると思います。<br>
-  ・1階でWiWi-Fiを受け取ろう。Wi-Fiは預けられないので手荷物の中に入れましょう。<br>・搭乗前に軽食を。<br>時間が心配なら、先に出国手続きをしても免税店のところにフードコートがありますよ。</li>
+  ・1階でWi-Fiを受け取ろう。Wi-Fiは預けられないので手荷物の中に入れましょう。<br>・搭乗前に軽食を。<br>時間が心配なら、先に出国手続きをしても免税店のところにフードコートがありますよ。</li>
 <li><strong>UO601便</strong><br>福岡発 <span class="time">12:50</span> → 香港着 <span class="time">15:50（現地時間）</span><br>３時間に見えますが時差があるので実際は４時間くらいです。</li>
 <li><strong>香港空港到着</strong><br>地下鉄のような電車に乗って入国審査会場まで行きます。人の流れについて行って大丈夫。<br>入国審査・手荷物受取後「Ｂ出口」でカズミがお迎えします。３人でホテルへ向かいましょう。</li>
 </ul>
@@ -186,7 +180,7 @@
 </div>
 <div class="card">
 <h3>昼ごろ〜夜｜ホテルの中でゆったり</h3>
-<figure class="photo"><img src="main_logo_venetian.jpg" alt="ベネチアン"　 width="400" height="80"></figcaption></figure>
+<figure class="photo"><img src="main_logo_venetian.png" alt="ベネチアン"　 width="400" height="80"></figcaption></figure>
 <p></p>
 <figure class="photo"><img src="Gazou5.jpg" alt="女人街の風景"><figcaption>ベネチアンホテル内：もう一つの町です。</figcaption></figure>
 <p>ショッピング、館内散策、写真撮影、カフェや食事など、ホテル内で過ごす時間を主役に。疲れたらお部屋で休憩しましょう。</p>
@@ -273,7 +267,9 @@
 <p>朝食後、香港島サイドを中心に観光。</p>
 <p><b>レパルスベイ</b><br>
 <img class="extra-wrap-image" src="Gazou106.jpg" alt="レパルスベイの海岸風景">
-香港島南部にある香港で最も有名かつ美しい三日月型のビーチリゾートです。背後に山を背負い、目の前に穏やかな海が広がる「龍脈」の通り道であり、香港屈指の強力な風水パワースポットとしても知られています。</p>
+香港島南部にある香港で最も有名かつ美しい三日月型のビーチリゾートです。背後に山を背負い、目の前に穏やかな海が広がる「龍脈」の通り道であり、香港屈指の強力な風水パワースポットとしても知られています。<br><Br>
+そして何といっても名作映画「慕情」で主人公の女医ハン・スーイン（ジェニファー・ジョーンズ）とアメリカ人新聞記者のマーク・エリオット（ウィリアム・ホールデン）が2本の煙草に同時に火をつける、非常にロマンチックなラブシーンがあったのもここです。
+事前に映画鑑賞して予習しておきましょう。</p>
 <p><b>スタンレーマーケット</b><br>
 • 迷路のような路地にお宝がぎっしり<br>
 <img class="extra-wrap-image" src="Gazou107.jpg" alt="スタンレーマーケットの路地と店舗">
@@ -285,8 +281,7 @@
 <div class="links"><a href="https://www.google.com/maps/search/?api=1&query=Repulse+Bay+Hong+Kong" target="_blank" rel="noopener">レパルスベイの地図 ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Stanley+Market+Hong+Kong" target="_blank" rel="noopener">スタンレーマーケットの地図 ↗</a><a href="https://www.google.com/search?q=Repulse+Bay+Stanley+Market+Hong+Kong" target="_blank" rel="noopener">観光情報を検索 ↗</a></div>
 </div>
 <div class="card">
-<ｐ>午後｜上環（シャンワン）から高速ターボジェット（船）に乗って、九龍サイドに戻ります。</p>
-<br><h3></h3>荔枝角（ライチッコク）でお買い物</h3>
+<h3>荔枝角（ライチッコク）でお買い物</h3>
 <p>何百もの店舗がひしめき合う、衣料品やファッション雑貨の巨大な卸売・輸出街です。最新トレンドの服が格安で手に入るため、プロのバイヤーだけでなく一般の買い物客（特に週末）にも人気があります。</p>
 <figure class="photo"><img src="Gazou11.jpg" alt="香港の海岸と街のイメージ"><figcaption>香港の海辺</figcaption></figure>
 
